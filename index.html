@@ -3,14 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Draggable String</title>
-    <link rel="stylesheet" href="style.css">
+    <title>LightBulb</title>
     <script src="https://kit.fontawesome.com/b820c69333.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <div class="container" id="bulb">
-        <i class="fas fa-lightbulb custom-icon"></i>
+    <div class="container">
+        <i id="point" class="custom-icon fa-solid fa-lightbulb"></i>
     </div>
-    <script src="app.js"></script>
+    <script src="/app.js"> </script>
 </body>
+<!-- internal css to be transfered to other forms -->
+<style>
+.custom-icon{
+font-size: 55px;
+color: white;
+position: absolute;
+right: 10%;
+top: 5%;
+transform: rotate(15deg);
+cursor: pointer;
+}
+.custom-icon.clicked{
+    color: rgb(228, 228, 4);
+}
+</style>
 </html>

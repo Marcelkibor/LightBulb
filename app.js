@@ -1,11 +1,16 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var bulb = document.getElementById("bulb");
-    bulb.addEventListener("click", function() {
-        externalFunction();
-    });
-});
+document.addEventListener('DOMContentLoaded',function(){
+    let link = document.getElementById('point');
+    let bulbStyles = {
+      a:'custom-icons',
+      b:'clicked'
+    }
+    if(link){
+      link.addEventListener('click',()=>{
+       handleColorState();
+      })
+    }
+   const handleColorState=()=>{
+    link.classList.toggle('clicked'); 
+  }
 
-function externalFunction() {
-    console.log("External function called!");
-    // Add your desired functionality here
-}
+});
