@@ -7,58 +7,12 @@
     <!-- <script src="https://kit.fontawesome.com/b820c69333.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="/style.css">
 </head>
-<body class="c-body">
+<body class="m-body">
     <div class="container">
-        <section id="line" class="line"></section>
         <!-- <i id="point" class="custom-icon fa-solid fa-lightbulb"></i> -->
         <section class="demo-bulb" id="demo-bulb"></section>
+        <section id="line" class="line"></section>
     </div>
     <script src="/app.js"> </script>
 </body>
-<!-- internal css to be transfered to other forms -->
-<style>
-.custom-icon{
-font-size: 55px;
-color: black;
-position: absolute;
-right: 100px;
-top: 5%;
-/* transform: rotate(15deg); */
-cursor: pointer;
-}
-.demo-bulb{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    position: absolute;
-    right: 100px;
-    top: 5%;
-    background-color: black;
-    cursor: pointer;
-}
-.container{
-    width: 100%;
-    height: 100px;
-    position: relative;
-}
-.line{
-    height: 50px;
-    width: 2px;
-    bottom: -3px;
-    position: absolute;
-    right: 125px;
-    background-color: black;
-
-}
-.custom-icon.clicked{
-    color: rgb(228, 131, 4);
-}
-.demo-bulb.clicked{
-    background-color: rgb(228, 131, 4);;
-}
-.c-body{
-    height: 100vh;
-    background-color: white;
-}
-</style>
 </html>
