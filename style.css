@@ -21,11 +21,10 @@ position: relative;
 .line{
 height: 50px;
 width: 2px;
-bottom: -3px;
 position: absolute;
 right: 125px;
 background-color: black;
-
+cursor: pointer;
 }
 .line.clicked{
 background-color: rgb(228, 131, 4);
