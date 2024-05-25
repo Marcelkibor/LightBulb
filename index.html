@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LightBulb</title>
+    <title>LightBulbs</title>
     <!-- <script src="https://kit.fontawesome.com/b820c69333.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="/style.css">
 </head>
-<body class="m-body">
+<body class="body">
     <div class="container">
         <!-- <i id="point" class="custom-icon fa-solid fa-lightbulb"></i> -->
-        <section class="demo-bulb" id="demo-bulb"></section>
-        <section id="line" class="line"></section>
+        <div class="bulb-parent">
+            <section class="demo-bulb" id="demo-bulb"></section>
+            <section id="line" class="line" draggable="true"></section>
+        </div>
     </div>
     <script src="/app.js"> </script>
 </body>
