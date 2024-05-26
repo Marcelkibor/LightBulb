@@ -10,10 +10,11 @@ bulbLine.classList.toggle('clicked');
 
 const handleDrag =()=>{
 try{
-bulbLine.addEventListener('dragenter',(event)=>{
-event.preventDefault();
-dragging = true;
-console.log('Element dragged!');
+
+    document.addEventListener('dragstart',(event)=>{
+    let selectedElement = event.target.id
+    console.log(`Element ${selectedElement} dragged!`);
+    event.preventDefault();
 })
 }
 catch(error){
