@@ -19,6 +19,7 @@
     width: 3px;
     background-color: black;
     cursor: pointer;
+    display: relative;
 }
 .bulb-parent{
     height: fit-content;
